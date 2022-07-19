@@ -182,3 +182,44 @@ li {
 }
 
 /* Courses Section */
+#courses {
+    background-color: #d3d3d3;
+    padding: 4.5rem 6rem;    
+}
+
+#courses h1 {
+    text-align: center;
+    padding-bottom: 4.5rem;
+}
+
+#courses-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course-block {
+    background-color: white;
+    margin: 1rem;
+    width: 30%;
+    min-width: 370px;
+}
+
+.course-img {
+    width: 100%;
+    height: auto;
+}
+
+.course-text {
+    padding: 2rem;
+    text-align: left;
+}
+
+.course-text h3 {
+    line-height: 2;
+    padding-top: .5rem;
+}
+
+.course-text p {
+    line-height: 1.5;
+}
