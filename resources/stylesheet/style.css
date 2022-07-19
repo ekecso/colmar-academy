@@ -1,0 +1,184 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #404040;
+}
+
+.container {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+/* Header */
+header .container {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+#logo {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+}
+
+#logo img {
+    height: 80%;
+}
+
+header p {
+    flex: 1;
+}
+
+#colmar {
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#academy {
+    font-family: 'Open Sans', sans-serif;
+    color: #BEBEBE;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+ul {
+    text-align: right;
+    display: inline-flex;
+    margin-right: 1rem;
+}
+
+li {
+    padding: 0 0.5rem;
+}
+
+/* Main Content */
+.main content {
+    position: relative;
+    top: 4rem;
+}
+
+/* Sign Up Section */
+#sign-up-section {
+    display: flex;
+    background-color: #d3d3d3;
+    padding: 4rem 4rem;
+}
+
+#sign-up-section img {
+    width: 60%;
+}
+
+#start-here {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    justify-content: center;
+    margin-left: 1.5rem;
+}
+
+#start-here h1, #start-here h2, .button {
+    margin: 1rem;
+}
+
+#start-here .button {
+    background-color: #404040;
+    padding: 0.75rem;
+}
+
+#start-here a {
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/* Information Section */
+#information {
+    display: flex;
+    padding: 2rem 0 2rem 1.5rem;
+}
+
+#info-main {
+    width: 60%;
+}
+
+#info-main img {
+    width: 100%;
+}
+
+#info-main h1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-right: .5rem;
+}
+
+#info-main p {
+    padding-top: 1.5rem;
+    padding-right: .5rem;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: .5rem;
+}
+
+.info-links {
+    width: 40%;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-block {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color;
+}
+
+.info-block:hover {
+    background-color:#BEBEBE;
+}
+
+.info-block img {
+    width: 35%;
+}
+
+.info-block-text {
+    display: block;
+    width: 65%;
+    padding-left: 1rem;
+}
+
+.info-block-text h2 {
+    padding-bottom: 0.75rem;
+}
+
+.info-block-text p {
+    padding-bottom: 1.25rem;
+    line-height: 1.25rem;
+}
+
+.info-block-text a {
+    color: #648ae2;
+    font-weight: 500;
+}
+
+/* Courses Section */
