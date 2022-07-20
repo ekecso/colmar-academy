@@ -149,7 +149,6 @@ li {
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     transition: background-color;
 }
 
@@ -162,7 +161,6 @@ li {
 }
 
 .info-block-text {
-    display: block;
     width: 65%;
     padding-left: 1rem;
 }
@@ -222,4 +220,73 @@ li {
 
 .course-text p {
     line-height: 1.5;
+}
+
+/* Thesis Section */
+#thesis {
+    padding: 2rem 0 2rem 1.5rem;
+}
+
+#thesis h1 {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#thesis-flex {
+    display: flex;
+}
+
+#thesis-video {
+    width: 60%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+#thesis-video h2 {
+    padding-top: 2rem;
+    padding-right: .5rem;
+}
+
+#thesis-video p {
+    padding-top: 1.5rem;
+    padding-right: .5rem;
+}
+
+.thesis-links {
+    width: 40%;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis-block {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    transition: background-color;
+}
+
+.thesis-block:hover {
+    background-color:#BEBEBE;
+}
+
+.thesis-block img {
+    width: 35%;
+}
+
+.thesis-block-text {
+    width: 65%;
+    padding-left: 1rem;
+}
+
+.thesis-block-text h2 {
+    padding-bottom: 0.75rem;
+}
+
+.thesis-block-text p {
+    padding-bottom: 1.25rem;
+    line-height: 1.25rem;
 }
