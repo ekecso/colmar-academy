@@ -19,6 +19,20 @@ h2 {
     font-weight: 600;
 }
 
+ul {
+    text-align: right;
+    display: inline-flex;
+    margin-right: 1rem;
+}
+
+li {
+    padding: 0 0.5rem;
+}
+
+.main-content {
+    padding-top: 64px;
+}
+
 /* Header */
 header {
     position: fixed;
@@ -26,7 +40,7 @@ header {
     width: 100%;
 }
 
-header .container {
+header .desktop {
     display: flex;
     height: 64px;
     align-items: center;
@@ -63,14 +77,27 @@ header p {
     font-size: 2rem;
 }
 
-ul {
-    text-align: right;
-    display: inline-flex;
-    margin-right: 1rem;
+header .mobile {
+    display: none;
 }
 
-li {
-    padding: 0 0.5rem;
+@media only screen and (max-width: 700px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding-top: .5rem;
+      }
 }
 
 /* Main Content */
@@ -86,8 +113,12 @@ li {
     padding: 4rem 4rem;
 }
 
-#sign-up-section img {
+#sign-up-section .img-container {
     width: 60%;
+}
+
+#sign-up-section img {
+    width: 100%;
 }
 
 #start-here {
@@ -96,6 +127,7 @@ li {
     max-width: 30rem;
     justify-content: center;
     margin-left: 1.5rem;
+    width: 40%;
 }
 
 #start-here h1, #start-here h2, .button {
@@ -111,6 +143,16 @@ li {
     color: white;
     text-align: center;
     font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 1080px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 /* Information Section */
