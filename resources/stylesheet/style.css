@@ -33,6 +33,26 @@ li {
     padding-top: 64px;
 }
 
+@media only screen and (max-width: 1080px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
 /* Header */
 header {
     position: fixed;
@@ -145,13 +165,35 @@ header .mobile {
     font-size: 1.25rem;
 }
 
-@media only screen and (max-width: 1080px) {
-    h1 {
-        font-size: 2.5rem;
+@media only screen and (max-width: 700px) {
+    #sign-up-section {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
     }
 
-    h2 {
-        font-size: 1.5rem;
+    #sign-up-section .img-container {
+        width: 100%;
+    }
+
+    #start-here {
+        max-width: 100%;
+        justify-content: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #start-here h1, #start-here h2 {
+        line-height: 1.25;
+    }
+
+    #start-here h1 {
+        margin-bottom: 0;
+    }
+
+    #start-here .button {
+        margin-bottom: 2rem;
     }
 }
 
