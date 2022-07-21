@@ -246,8 +246,12 @@ header .mobile {
     background-color:#BEBEBE;
 }
 
-.info-block img {
+.info-links .desktop {
     width: 35%;
+}
+
+.info-block img {
+    width: 100%;
 }
 
 .info-block-text {
@@ -267,6 +271,52 @@ header .mobile {
 .info-block-text a {
     color: #648ae2;
     font-weight: 500;
+}
+
+.mobile img {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #information {
+        display: flex;
+        padding: 0;
+    }
+    
+    #info-main {
+        display: none;
+    }
+
+    .info-links {
+        width: 100%;
+        margin-left: 0rem;
+    }
+    
+    .info-block {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .desktop img {
+        display: none;
+    }
+
+    .mobile img {
+        display: block;
+    }
+
+    .info-block-text {
+        width: 100%;
+        padding: 1.5rem 2rem;
+    }
+
+    .info-block-text h2 {
+        padding-bottom: 0.75rem;
+    }
+    
+    .info-block-text p {
+        padding-bottom: 1rem;
+    }
 }
 
 /* Courses Section */
