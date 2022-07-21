@@ -19,6 +19,11 @@ h2 {
     font-weight: 600;
 }
 
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 ul {
     text-align: right;
     display: inline-flex;
@@ -325,6 +330,10 @@ header .mobile {
     padding: 4.5rem 4rem;    
 }
 
+#courses-mobile {
+    display: none;
+}
+
 #courses h1 {
     text-align: center;
     padding-bottom: 4.5rem;
@@ -361,6 +370,39 @@ header .mobile {
 
 .course-text p {
     line-height: 1.5;
+}
+
+@media only screen and (max-width: 700px) {
+    #courses {
+        display: none;
+    }
+
+    #courses-mobile {
+        display: block;
+        padding: 2rem 2rem;
+        border-top: 1px solid #BEBEBE;
+        border-bottom: 1px solid #BEBEBE;
+    }
+
+    #courses-mobile h1 {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    #courses-mobile ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+
+    #courses-mobile li {
+        text-align: left;
+        padding: 1rem;
+        background-color: #BEBEBE;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 }
 
 /* Thesis Section */
