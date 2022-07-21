@@ -126,9 +126,15 @@ header .mobile {
 }
 
 /* Main Content */
-.main content {
+.main-content {
     position: relative;
-    top: 4rem;
+    padding-top: 4rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .main-content {
+        padding-top: 40px;
+    }
 }
 
 /* Sign Up Section */
